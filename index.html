@@ -29,6 +29,41 @@
       text-rendering:optimizeLegibility;
       -webkit-font-smoothing:antialiased;
     }
+
+    main{
+      padding:48px 20px;
+      background: #ffffff;
+      min-height: calc(100vh - 160px);
+    }
+
+    /* About section — matches header's bold modern style */
+    .about .container{
+      max-width:900px;
+      margin:0 auto;
+      background: linear-gradient(180deg,#ffffff,#fbfdff);
+      padding:32px;
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.08);
+      border-left:6px solid var(--accent);
+    }
+    .section-title{
+      margin:0 0 12px 0;
+      font-weight:800;
+      font-size:clamp(1.25rem, 4vw, 2rem);
+      color:var(--bg);
+      letter-spacing:-0.01em;
+      -webkit-font-smoothing:antialiased;
+    }
+    .section-text{
+      margin:0;
+      color:#334155;
+      line-height:1.6;
+      font-size:1rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -37,7 +72,14 @@
   </header>
 
   <main>
-    <!-- Your site content goes here -->
+    <section class="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About Me</h2>
+        <p class="section-text">Write a short paragraph about yourself here — this is a placeholder where you can add details about your background, skills, and interests.</p>
+      </div>
+    </section>
+
+    <!-- More site content goes here -->
   </main>
 </body>
 </html>
