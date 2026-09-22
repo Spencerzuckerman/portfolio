@@ -6,81 +6,59 @@
   <title>Spencer Zuckerman</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg: #0f1724;
-      --accent: #00d4ff;
-      --text: #e6eef8;
-    }
+    :root{--bg:#0f1724;--accent:#00d4ff;--text:#e6eef8;}
     html,body{height:100%;}
-    body{margin:0;font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;background: #ffffff;color:var(--bg);}
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px 20px;
-      background: linear-gradient(90deg, #0b1220 0%, #071021 100%);
-    }
-    .site-title{
-      margin:0;
-      font-weight:800;
-      font-size:clamp(1.75rem, 5vw, 3.5rem);
-      letter-spacing:-0.01em;
-      color:var(--text);
-      text-rendering:optimizeLegibility;
-      -webkit-font-smoothing:antialiased;
-    }
-
-    main{
-      padding:48px 20px;
-      background: #ffffff;
-      min-height: calc(100vh - 160px);
-    }
-
-    /* About section — matches header's bold modern style */
-    .about .container{
-      max-width:900px;
-      margin:0 auto;
-      background: linear-gradient(180deg,#ffffff,#fbfdff);
-      padding:32px;
-      border-radius:12px;
-      box-shadow:0 8px 30px rgba(2,6,23,0.08);
-      border-left:6px solid var(--accent);
-    }
-    .section-title{
-      margin:0 0 12px 0;
-      font-weight:800;
-      font-size:clamp(1.25rem, 4vw, 2rem);
-      color:var(--bg);
-      letter-spacing:-0.01em;
-      -webkit-font-smoothing:antialiased;
-    }
-    .section-text{
-      margin:0;
-      color:#334155;
-      line-height:1.6;
-      font-size:1rem;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; }
-    }
+    body{margin:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background:#fff;color:var(--bg);}
+    header{display:flex;align-items:center;justify-content:center;padding:32px 20px;background:linear-gradient(90deg,#0b1220 0%,#071021 100%);}
+    .site-title{margin:0;font-weight:800;font-size:clamp(1.75rem,5vw,3.5rem);letter-spacing:-.01em;color:var(--text);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+    main{padding:48px 20px;background:#fff;min-height:calc(100vh - 160px);}
+    .about .container,.unit-one .container{max-width:900px;margin:0 auto 36px;background:linear-gradient(180deg,#fff,#fbfdff);padding:32px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.08);border-left:6px solid var(--accent);}
+    .section-title{margin:0 0 12px;font-weight:800;font-size:clamp(1.25rem,4vw,2rem);color:var(--bg);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;}
+    .subsection-title{margin:28px 0 10px;font-size:1.25rem;color:var(--bg);}
+    .section-text,.unit-one p,.unit-one li{color:#334155;line-height:1.6;font-size:1rem;}
+    .section-text{margin:0;}
+    .unit-one ul{padding-left:1.5rem;margin-top:8px;}
+    @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
   </style>
 </head>
 <body>
-  <header>
-    <h1 class="site-title">Spencer Zuckerman</h1>
-  </header>
-
+  <header><h1 class="site-title">Spencer Zuckerman</h1></header>
   <main>
-    <section class="about" aria-labelledby="about-title">
-      <div class="container">
-        <h2 id="about-title" class="section-title">About Me</h2>
-        <p class="section-text">My name is Spencer Zuckerman, and I’m from Tenafly, NJ. I’m currently a freshman at Indiana University studying Elementary Education. I decided to study this because I adore working with children and learning how the child's brain functions. In the future, I would love to be a Kindergarten teacher. One of the things that interests me most about my major is learning all of the behind-the-scenes aspects of becoming a teacher, and I’m so excited to learn more throughout college. Outside of school, I enjoy going on long walks, playing tennis, and finding new movies to watch. I also love spending time with my family and friends. Something that has been a big part of my life is working with children. I have spent years babysitting and have also had opportunities to work with children in classrooms and through volunteering. These experiences have made me even more confident that teaching is what I want to do. I would describe myself as caring, outgoing, and determined. When it comes to reading and writing, I enjoy them most when I am interested in the topic and can connect it to my own life. I sometimes struggle with getting my ideas organized when writing, so this semester I hope to become more confident in my writing process. Since starting at IU, I have been most excited about meeting new people, becoming more independent, and beginning classes related to my future career. I’m excited to see what the year brings.
-.</p>
-      </div>
-    </section>
+    <section class="about" aria-labelledby="about-title"><div class="container">
+      <h2 id="about-title" class="section-title">About Me</h2>
+      <p class="section-text">My name is Spencer Zuckerman, and I’m from Tenafly, NJ. I’m currently a freshman at Indiana University studying Elementary Education. I decided to study this because I adore working with children and learning how the child brain functions. In the future, I would love to be a Kindergarten teacher. One of the things that interests me most about my major is learning all of the behind the scenes of becoming a teacher, and I’m so excited to learn more throughout college. Outside of school, I enjoy going on long walks, playing tennis, and finding new movies to watch. I also love spending time with my family and friends. Something that has been a big part of my life is working with children. I have spent years babysitting and have also had opportunities to work with children in classrooms and through volunteering. These experiences have made me even more confident that teaching is what I want to do. I would describe myself as caring, outgoing, and determined. When it comes to reading and writing, I enjoy them most when I am interested in the topic and can connect it to my own life. I sometimes struggle with getting my ideas organized when writing, so this semester I hope to become more confident in my writing process. Since starting at IU, I have been most excited about meeting new people, becoming more independent, and beginning classes related to my future career. I’m excited to see what the year brings.</p>
+    </div></section>
 
-    <!-- More site content goes here -->
+    <section class="unit-one" aria-labelledby="unit-one-title"><div class="container">
+      <h2 id="unit-one-title" class="section-title">Unit One</h2>
+      <h3 class="subsection-title">Looking Fine When You Are Not Fine</h3>
+      <p>The phenomenon I want to explore is the pressure first-year college students feel to seem like they are doing well, even when they are actually stressed, lonely, overwhelmed, or struggling to adjust. I chose this phenomenon because it is something I have noticed a lot since starting college. Before coming here, I always saw college as this exciting experience where people make tons of friends, go out, become independent, and immediately love their new life. Once I actually got here, I realized that the transition is much more complicated than it looks from the outside.</p>
+      <p>One of the strongest patterns I have noticed is that people tend to show the best parts of college and hide the difficult parts. On Instagram or TikTok, I see people posting pictures from football games, parties, tailgates, dinners, and nights out. If you only looked at those posts, you would probably assume everyone was having the best time of their life. What you usually do not see is someone feeling homesick, stressed about school, overwhelmed by their roommate, or wishing they had more time alone. I can personally relate to this. I only post online when I am having a good time; I never show the harder moments.</p>
+      <p>I have also noticed this in everyday conversations. People will say things like “I’m good” or “college is so fun” even when they are also complaining about being exhausted, behind on work, or struggling socially. My current interpretation is that first-year students may feel pressure to prove that they adjusted successfully. There is almost an expectation that once you arrive at college, you are supposed to be independent and happy right away.</p>
+      <p>I think part of this comes from comparison. When you see other students looking happy and social, it can make you feel like you are the only person having a hard time. The problem is that you are comparing your full experience to someone else’s best moments. This can make normal struggles like homesickness, loneliness, academic stress, or roommate problems feel more embarrassing than they actually are.</p>
+      <p>There are definitely assumptions I am making that I still need to investigate. I am assuming that social media creates pressure to look happy, but I do not yet know how much of this pressure comes from social media and how much comes from college culture in general. I am also assuming that people hide their struggles, but some people may actually be doing really well.</p>
+      <p>This leaves me with a lot of questions. Why do college students feel pressure to look like they are having a perfect experience? Why is it easier to post the fun parts of college than the difficult parts? How does social media affect the way students compare themselves to other people? Does seeing idealized versions of college make normal adjustment struggles feel worse? Why does being independent sometimes feel like you are not allowed to admit that you are struggling?</p>
+      <p>Three popular culture artifacts I could use are college “day in my life” TikToks, Instagram college photo dumps, and advertisements from universities that show an ideal version of campus life. My strongest artifact would probably be college “day in my life” TikToks because they often show a very organized and exciting version of college. A video might include going to class, working out, studying at a coffee shop, eating with friends, and going out at night, while leaving out stress, loneliness, homesickness, or moments where the person is doing nothing.</p>
+      <p>Using these videos as a lens complicates my interpretation because they may not be intentionally fake. People naturally want to post the best parts of their lives. However, when thousands of students are doing the same thing, it can create a larger image of college that feels unrealistic. This makes me wonder whether the pressure comes from individual students or from a culture where everyone is constantly showing their best moments.</p>
+      <p><strong>Tentative XY Thesis:</strong> While first-year college students may hide their struggles because they want to appear independent and successful, examining social media and idealized portrayals of college suggests that students may also feel pressure to present a perfect college experience because they are constantly comparing themselves to carefully selected versions of other people’s lives.</p>
+
+      <h3 class="subsection-title">Inquiry Notebook</h3>
+      <p>My inquiry started with thinking about how different the reality of college can feel compared to how college looks online. Before coming to school, I saw a lot of videos and pictures that made college seem exciting, social, and almost perfect. Once I got here, I realized that college also includes stress, homesickness, difficult classes, roommate problems, exhaustion, and feeling overwhelmed.</p>
+      <p>The more I paid attention, the more I noticed that people usually do not show those parts.</p>
+      <h4>Patterns I Noticed</h4><ul><li>Students usually post the most exciting parts of college.</li><li>Social media can make it seem like everyone else is always having fun.</li><li>Students sometimes hide stress or loneliness in everyday conversations.</li><li>There is pressure to adjust quickly and become independent.</li><li>Normal struggles can feel embarrassing when everyone else looks happy.</li><li>Students compare their full experience to other people's best moments.</li></ul>
+      <h4>Questions I Want to Investigate</h4><ul><li>Why do students feel pressure to make college look perfect?</li><li>How does social media affect the way first-year students judge their own college experience?</li><li>Why do students sometimes hide homesickness or loneliness?</li><li>Does seeing idealized college content make adjustment harder?</li><li>Where does the pressure to seem independent come from?</li><li>Can showing more realistic versions of college help students feel less alone?</li></ul>
+
+      <h3 class="subsection-title">Spaceship / Tree Phenomenon</h3>
+      <p>My original brainstorm focused on the general idea of college stress and adjusting to college. I realized that this was way too broad because there are so many different kinds of stress that college students experience.</p>
+      <p>When I looked more closely at what interested me, I realized that I was less interested in stress itself and more interested in the difference between how college feels privately and how students present their college experience publicly.</p>
+      <h4>My Original Broad Phenomenon</h4><p>First-year students struggling to adjust to college.</p>
+      <h4>Patterns That Led Me Here</h4><ul><li>Students post fun experiences but rarely post difficult ones.</li><li>People seem embarrassed to admit that they are homesick or lonely.</li><li>Social media encourages comparison.</li><li>There is pressure to seem independent.</li><li>Students can feel like everyone else has adjusted faster than they have.</li><li>The public version of college often looks much easier than the real experience.</li></ul>
+      <h4>My More Specific Phenomenon</h4><p>The pressure first-year college students feel to appear happy, independent, and adjusted even when they are struggling privately.</p>
+      <h4>Popular Culture Artifacts</h4><ul><li>College “day in my life” TikTok videos</li><li>Instagram college photo dumps</li><li>University advertisements and promotional videos</li></ul>
+      <h4>Strongest Artifact</h4><p>My strongest artifact is college “day in my life” content because it often creates an extremely organized and positive version of college life. These videos can make college look effortless even though the real experience is much more complicated.</p>
+      <h4>Where My Inquiry Is Going</h4><p>Instead of only asking why college students get stressed, I want to investigate why students feel like they have to hide that stress and make their college experience look better than it actually feels.</p>
+      <p>I am especially interested in the role social media plays because students are constantly seeing other people's lives and comparing them to their own. I want to understand whether this pressure mostly comes from social media, college culture, personal expectations, or a combination of all three.</p>
+    </div></section>
   </main>
 </body>
 </html>
